@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --greeny-color: rgb(101, 161, 86);
+    --form-background: #252525;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 28px;
     justify-content: center;
     align-items: center;
-    background-color: orange;
+    background-color: var(--greeny-color);
 }
 
 .box {
@@ -24,31 +29,36 @@ body {
     width: 80%;
     display: flex;
     flex-direction: column;
-    background-color: #252525;
+    background-color: var(--form-background);
     border-radius: 20px;
     color: #ffff;
     padding-bottom: 20px;
+    box-shadow: 1px 1px 10px 3px #252525;
 }
 
 .title {
-    font-size: 22px;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 30px;
     text-align: center;
-    margin: 1em 0 0.2em;
+    margin: 2em 0 0.2em;
+    color: var(--greeny-color);
+
 }
 
 .form-wraper {
-    padding: 1em;
+    padding: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 20px;
 }
 
 .first-input, .second-input {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 
 }
 
@@ -63,6 +73,7 @@ body {
 
 label {
     font-size: 15px;
+    color: #ffff;
 }
 
 .input {
@@ -71,13 +82,15 @@ label {
     border: none;
     max-width: 100%;
     font-size: 14px;
+
 }
 
 
 #email, #password {
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid #ffff;
+    border-bottom: 3px solid var(--greeny-color);
+    font-size: 16px;
     border-radius: unset;
     color: #ffff;
     width: 100%;
@@ -92,30 +105,28 @@ button {
     align-self: flex-end;
     flex: 1 2 60px;
     cursor: pointer;
-    background-color: greenyellow;
-    box-shadow: 0 0 10px 2px #292727;
     font-weight: bold;
-    color: #ffff70;
+    color: #ffff;
     
 }
 
 
 .login {
-    background-color: skyblue;
+    background-color: rgb(101, 161, 86);
     
 }
 
 .login:hover {
-    box-shadow: 0 0 5px 2px rgb(54, 128, 155);
+    box-shadow: 0 0 5px 2px rgb(101, 161, 86);
 }
 
 .signup {
-    background-color: orange;
+    background-color: rgb(101, 161, 86);
     
 }
 
 .signup:hover {
-    box-shadow: 0 0 5px 2px rgb(218, 126, 5);
+    box-shadow: 0 0 5px 2px rgb(101, 161, 86);
 }
 
 @media (max-width: 450px) {
