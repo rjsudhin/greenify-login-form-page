@@ -66,7 +66,7 @@ label {
 }
 
 .input {
-    height: 25px;
+    height: 2.5em;
     border-radius: 20px;
     text-align: center;
     border: none;
@@ -75,10 +75,10 @@ label {
 
 
 #email, #password {
+    border: none;
     background-color: transparent;
-    border: 2px solid #1d1d1d;
-    box-shadow: 0 0 10px 2px #1d1d1d;
-    color: #ffff;
+    border-bottom: 2px solid #ffff;
+    border-radius: unset;
 }
 
 
@@ -108,7 +108,7 @@ button {
     box-shadow: 0 0 5px 2px rgb(218, 126, 5);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .first-input {
         flex: 1 1 100%;
     }
