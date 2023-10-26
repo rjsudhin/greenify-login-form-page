@@ -62,15 +62,15 @@ body {
 
 
 label {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .input {
     height: 2.5em;
     border-radius: 20px;
-    text-align: center;
     border: none;
     max-width: 100%;
+    font-size: 14px;
 }
 
 
@@ -79,6 +79,12 @@ label {
     background-color: transparent;
     border-bottom: 2px solid #ffff;
     border-radius: unset;
+    color: #ffff;
+    width: 100%;
+}
+
+#email:hover, #password:hover {
+    border-color: #ffff70;
 }
 
 
@@ -88,11 +94,15 @@ button {
     cursor: pointer;
     background-color: greenyellow;
     box-shadow: 0 0 10px 2px #292727;
+    font-weight: bold;
+    color: #ffff70;
+    
 }
+
 
 .login {
     background-color: skyblue;
-    color: black;
+    
 }
 
 .login:hover {
@@ -101,7 +111,7 @@ button {
 
 .signup {
     background-color: orange;
-    color: black;
+    
 }
 
 .signup:hover {
@@ -116,6 +126,7 @@ button {
     .second-input {
         flex: 1 1 100%;
     }
+
 
     button {
         flex: 1 1 100%;
